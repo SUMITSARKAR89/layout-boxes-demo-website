@@ -254,16 +254,19 @@ nav ul li a:hover{
 
 }
 @keyframes button {
-    from {background-color:rgb(14, 1, 1) ; border: 1px solid transparent;}
-    to {background-color: #ffffff93 ;color: black; border: 1px solid var(--color-text);}
+    0% {background-color:rgb(14, 1, 1) ; border: 1px solid transparent;}
+    50% {background-color: #ffffff93 ;color: black; border: 1px solid var(--color-text);}
+    100% {background-color: var(--green-color) ;color: #fff; border: 1px solid #fff;}
   }
 
 
 
-  .hero button:hover, #trade button:hover{
+  .hero button:hover, #trade button:hover, .blog-details button:hover{
     transform: scale(1.1);
     background-color: var(--green-color);
     animation: none;
+    color: #fff;
+    border: none;
   }
 .number-container{
     display: grid;
@@ -469,6 +472,7 @@ hr.hr{
     
 
 }
+
 .text-content .content-details a.t-details{
     color: var(--color-text);
     font-size: 13px;
@@ -517,32 +521,87 @@ a.t-details:hover,  a.t-head:hover{
 .blog-container .blog-card{
     padding: 10px 15px;
     width: 50%;
-    background-color: #777777;
+    height: 50vh;
+    
+    
+}
+.blog-content{
+    transition: 0.6s;
 }
 .blog-content img{
     height:auto ;
     width: 100%;
+    position: relative;
+    transition: 0.6s;
 }
-
-.blog-content.left:hover{
-    background-image: url(images/wood-page-baner-7-3-opt.jpg);
+.blog-content img:hover{
+    transform: scale(1.1);
+}
+.left, .right{
+    position: relative;
+    transition: 0.6s;
+   
+   
+}
+.blog-content.left:hover, 
+.blog-content.right:hover{
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 74vh;
-    object-fit: cover;
-
-}
-.blog-content.right{
-    background-image: url(images/wood-page-baner-8-1-opt.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: 70vh;
+    height: 40vh;
+    width: 40%;
     
-
 }
+
+.blog-details{
+    position: absolute;
+    right: -150px;
+    top: 80px;
+    width: 75%;
+    padding-right:180px ;
+    text-align: right;
+    transition: 0.3s;
+}
+.blog-details p{
+    font-size: var(--main-font);
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+.blog-details h4{
+    font-size: var(--h4-font);
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+.blog-details h3{
+    font-size: var(--h3-font);
+    font-weight: 800;
+    color: var(--color-font);
+    line-height: 40px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  
+}
+.blog-details button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: var(--main-font);
+    font-weight: 400;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+
 
 /* ---------------------------------------------  */
 #pfri .pfri-container{
