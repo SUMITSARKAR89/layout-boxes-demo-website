@@ -79,10 +79,7 @@
         background-size: cover;
         
     }
-    .blog-card.a:hover, 
-    .blog-card.b:hover{
-        ;
-    }
+    
     .blog-content img{
       display: none;
     }
@@ -202,6 +199,9 @@
 .footer-end{
     flex-direction: column;
     gap: 10px;
+}
+#sidebar{
+ width: 100%;
 }
 
 }

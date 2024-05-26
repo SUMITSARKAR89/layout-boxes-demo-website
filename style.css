@@ -104,7 +104,7 @@ body{
     z-index: 1000;
     display: none;
     background-color:rgba(255, 0, 0, 0.342);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
     border-radius: 5px 5px 0 50px;
 }
 #sidebar ul {
