@@ -122,8 +122,8 @@ header .head .logo img{
     height: 10vh;
     top: 0;
     left: 10;
-    right: 10; 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.171);  
+    right: 8; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);  
     border-radius: 0 0 2px 2px; 
 } 
 header .head{
@@ -757,6 +757,7 @@ footer .foot-container{
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
+    border-bottom: 1px solid rgba(83, 76, 76, 0.068);
 }
 .foot-card-left,
 .foot-card-right{
@@ -838,7 +839,7 @@ footer .foot-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .footer-end p{
     text-transform: capitalize;
