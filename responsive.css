@@ -79,21 +79,20 @@
         background-size: cover;
         
     }
+    .blog-card.a:hover, 
+    .blog-card.b:hover{
+        ;
+    }
     .blog-content img{
-        
-        position: relative;
-    }
-    .left, .right{
-        position: absolute;
-       
-    }
-    .blog-content.left:hover, 
-    .blog-content.right:hover{
-    position: relative;
-    display: none;
+      display: none;
     }
     .blog-details{
-        display: none;
+        left: 15px;
+        top: 80px;
+        width: 80%;
+        padding-right:10px ;
+        text-align: left;
+        transition: 0.3s;
     }
     #pfri .pfri-container{
         grid-template-columns: repeat(1, 1fr);
@@ -114,4 +113,95 @@
        
     }
 }
-@media(max-width:980px)
+@media(max-width:980px){
+    .hero{
+        padding: 15% 2%;
+        width: 100%;
+        height: 80vh;
+        background-image: url(images/slide-boxed-11-opt.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: left;
+        
+    
+    }
+    .number-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .number-card {
+       justify-content:flex-start ;
+        
+    }
+}
+@media(max-width:780px){
+    .trading-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    #pfri .pfri-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pfri-container  .pfri-card{  
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bg-hero img{
+        width: 70px;
+        height: auto;
+    }
+
+    section{
+        padding: 11% 0;
+    }
+
+}
+@media(max-width:650px){
+    .hero{
+        padding: 15% 2%;
+        width: 100%;
+        height: 80vh;
+        background-image: url(images/slide-boxed-14-opt.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: left;
+        
+    }
+    :root{
+        /* font  */
+        --main-font: 12px;
+       --h1-font: 40px;
+       --h2-font:;
+       --h3-font:20px;
+       --h4-font:14px;
+       --h5-font:13px;
+       --text-font: 16px;
+       --number-font: 40px;
+    }
+    .trading-container{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .bg-hero img{
+        width: 55px;
+        height: auto;
+    }
+    footer .foot-container{
+       flex-direction: column;
+       
+    }
+    .foot-card-left,
+    .foot-card-right{
+    width: 100%;
+   
+    }
+    .foot-card-left{
+    flex-direction: column;
+
+}
+.footer-end{
+    flex-direction: column;
+    gap: 10px;
+}
+
+}
